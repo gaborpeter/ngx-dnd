@@ -20,8 +20,7 @@
     </ng-template>
     <ng-container *ngIf="!container.template">
       <div
-        class="ngx-dnd-content">
-        {{model.label}}
+        class="ngx-dnd-content" [innerHtml]="model.label">
       </div>
       <ngx-dnd-container
         *ngIf="model.children"
